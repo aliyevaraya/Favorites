@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="my-[5vh]">
+    <div class="text-right">
+        <button onclick="openFav()" class="p-2 bg-green-500 text-white w-[100px] mr-5 mb-5">Wishlist</button>
+    </div>
+    <div id="wishlist" class="fixed -right-[130%] top-0 bg-white h-full w-[288px] p-5">
+        <div class="flex gap-5 justify-between">
+            <h2 class="text-[18px] font-bold">Wishlist</h2>
+            <button onclick="closeFav()">✘</button>
+        </div>
+    </div>
+    <div>
+      <h1 class="text-[24px] font-bold text-center">Lorem, ipsum.</h1>
+      <h4 class="text-center">Lorem ipsum dolor sit amet consectetur.</h4>
+      <div
+        id="cards"
+        class="mt-[4em] flex flex-wrap gap-5 justify-center"
+      ></div>
+    </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
